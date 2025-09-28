@@ -107,7 +107,7 @@ section {
 
 /* Home */
 #home {
-    background: url(../static/images/background.jpg) no-repeat center center fixed;
+    background: url(../images/background.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     padding: 6rem 2rem;
