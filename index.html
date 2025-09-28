@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mabini Tourismo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="#home" class="brand"><img src="static/images/logo.png" alt="Mabini Tourismo" class="logo">Mabini Tourismo</a>
+        </div>
+        <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h1>Welcome to Mabini Batangas</h1>
+        <p>Discover stunning beaches, world-class diving spots, and the peaceful charm of nature all in one place</p>
+    </section>
+
+    <!-- Attractions -->
+    <section id="attractions">
+        <h2>Discover Mabini’s Paradise</h2>
+        <div class="carousel">
+        <div class="slides">
+            <img src="static/images/picture-4.jpg" alt="Beach">
+            <img src="static/images/picture-5.jpg" alt="Diving">
+            <img src="static/images/picture-6.jpg" alt="Island">
+            <img src="static/images/picture-7.jpg" alt="Mountain">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        </div>
+
+        <h2 style="margin-top:2rem;">Top Attractions</h2>
+        <div class="cards">
+        <div class="card">
+            <img src="static/images/picture-1.png" alt="Cathedral">
+            <h3>Cathedral</h3>
+            <p>The Cathedral Rock is one of the most popular diving spots in Mabini, Batangas. Beneath the surface, two large rocks form a structure that looks like church pillars, with a cross placed between them years ago. The site is home to vibrant corals and a variety of fish, attracting both beginner and experienced divers.</p>
+        </div>
+        <div class="card">
+            <img src="static/images/picture-2.jpg" alt="Camp Netanya">
+            <h3>Camp Netanya Resort & Spa</h3>
+            <p>Camp Netanya Resort & Spa in Ligaya, Mabini, Batangas is often called the “Little Santorini of the Philippines” because of its white-and-blue Greek-inspired architecture overlooking the sea. It’s a favorite spot for travelers who want a mix of relaxation and adventure, offering stunning ocean views, an infinity pool, and easy access to nearby dive sites.</p>
+        </div>
+        <div class="card">
+            <img src="static/images/picture-3.jpeg" alt="Mt. Gulugod Baboy">
+            <h3>Mt. Gulugod Baboy</h3>
+            <p>Mt. Gulugod Baboy in Mabini, Batangas is a beginner-friendly hiking destination known for its rolling hills and breathtaking 360-degree views. From the summit, visitors can see Batangas Bay, Balayan Bay, and even nearby islands on a clear day. It is a popular spot for day hikes, camping, and catching the sunrise or sunset above the sea.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location">
+        <h2>Find Us on Google Map</h2>
+        <div class="map-container">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62013.686676686404!2d120.87661609113157!3d13.72720196687253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd0747a21db82d%3A0x6987772247cd8444!2sMabini%2C%20Batangas!5e0!3m2!1sen!2sph!4v1757941973104!5m2!1sen!2sph" 
+            width="600" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <h4><i class="fa-solid fa-location-dot"></i> Find us</h4>
+                <p>Anilao Proper, Mabini, Batangas</p>
+            </div>
+            <div class="footer-box">
+                <h4><i class="fa-solid fa-phone"></i> Call us</h4>
+                <p>+63 912 345 6789</p>
+            </div>
+            <div class="footer-box">
+                <h4><i class="fa-solid fa-envelope"></i> Mail us</h4>
+                <p>info@mabinitourismo.com</p>
+            </div>
+            <div class="footer-box">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
