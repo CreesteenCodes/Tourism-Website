@@ -17,8 +17,10 @@
         <div class="menu-toggle">☰</div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#plans">Visit Us</a></li>
                 <li><a href="#location">Location</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
     </nav>
 
@@ -26,39 +28,197 @@
     <section id="home">
         <h1>Welcome to Mabini Batangas</h1>
         <p>Discover stunning beaches, world-class diving spots, and the peaceful charm of nature all in one place</p>
+        <div class="home-buttons">
+            <a href="#discover" class="btn">Discover</a>
+            <a href="#plans" class="btn">Resorts</a>
+        </div>
     </section>
 
     <!-- Attractions -->
-    <section id="attractions">
-        <h2>Discover Mabini’s Paradise</h2>
+    <section id="discover" class="parallax">
+        <h1>Discover Mabini’s Paradise</h1>
         <div class="carousel">
-        <div class="slides">
-            <img src="static/images/picture-4.jpg" alt="Beach">
-            <img src="static/images/picture-5.jpg" alt="Diving">
-            <img src="static/images/picture-6.jpg" alt="Island">
-            <img src="static/images/picture-7.jpg" alt="Mountain">
-        </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
+            <div class="slides">
+                <img src="static/images/picture-4.jpg" alt="Beach">
+                <img src="static/images/picture-5.jpg" alt="Diving">
+                <img src="static/images/picture-6.jpg" alt="Island">
+                <img src="static/images/picture-7.jpg" alt="Mountain">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </div>
 
         <h2 style="margin-top:2rem;">Top Attractions</h2>
         <div class="cards">
-        <div class="card">
-            <img src="static/images/picture-1.png" alt="Cathedral">
-            <h3>Cathedral</h3>
-            <p>The Cathedral Rock is one of the most popular diving spots in Mabini, Batangas. Beneath the surface, two large rocks form a structure that looks like church pillars, with a cross placed between them years ago. The site is home to vibrant corals and a variety of fish, attracting both beginner and experienced divers.</p>
+            <div class="card">
+                <img src="static/images/picture-1.png" alt="Cathedral">
+                <h3>Cathedral Rock</h3>
+                <p>The Cathedral Rock is one of the most popular diving spots in Mabini, Batangas. Beneath the surface, two large rocks form a structure that looks like church pillars, 
+                    with a cross placed between them years ago. The site is home to vibrant corals and a variety of fish, attracting both beginner and experienced divers.</p>
+            </div>
+            <div class="card">
+                <img src="static/images/picture-2.jpg" alt="Camp Netanya">
+                <h3>Camp Netanya Resort and Spa</h3>
+                <p>Camp Netanya Resort and Spa in Ligaya, Mabini, Batangas is often called the “Little Santorini of the Philippines” because of its white-and-blue Greek-inspired 
+                    architecture overlooking the sea. It’s a favorite spot for travelers who want a mix of relaxation and adventure, offering stunning ocean views, an infinity pool, 
+                    and easy access to nearby dive sites.</p>
+            </div>
+            <div class="card">
+                <img src="static/images/picture-3.jpeg" alt="Mt. Gulugod Baboy">
+                <h3>Mt. Gulugod Baboy</h3>
+                <p>Mt. Gulugod Baboy in Mabini, Batangas is a beginner-friendly hiking destination known for its rolling hills and breathtaking 360-degree views. From the summit, 
+                    visitors can see Batangas Bay, Balayan Bay, and even nearby islands on a clear day. It is a popular spot for day hikes, camping, and catching the sunrise or 
+                    sunset above the sea.</p>
+            </div>
         </div>
-        <div class="card">
-            <img src="static/images/picture-2.jpg" alt="Camp Netanya">
-            <h3>Camp Netanya Resort & Spa</h3>
-            <p>Camp Netanya Resort & Spa in Ligaya, Mabini, Batangas is often called the “Little Santorini of the Philippines” because of its white-and-blue Greek-inspired architecture overlooking the sea. It’s a favorite spot for travelers who want a mix of relaxation and adventure, offering stunning ocean views, an infinity pool, and easy access to nearby dive sites.</p>
+    </section>
+
+    <!--- Visit Us -->
+    <section id="plans" class="parallax">
+        <h2 style="margin-top: 1rem;">Resorts</h2>
+        <div class="resort-cards">
+            <div class="card resort-card">
+                <img src="static/images/picture-8.jpg" alt="Aiyanar Beach and Dive Resort">
+                <h3>Aiyanar Beach and Dive Resort</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Sitio Looc, Brgy. Bagalangit, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0917 883 1428</p>
+                    <p><i class="fa-solid fa-envelope"></i>info@aiyanar.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://aiyanar.com</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-9.jpg" alt="Anilao Awari Bay">
+                <h3>Anilao Awari Bay</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Brgy. Solo, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0917 720 3915</p>
+                    <p><i class="fa-solid fa-envelope"></i>inquiry@anilaoawaribay.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://anilaoawaribay.com</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-10.jpg" alt="Camp Netanya Resort and Spa">
+                <h3>Camp Netanya Resort and Spa</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Brgy. Ligaya, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0927 895 4092</p>
+                    <p><i class="fa-solid fa-envelope"></i>info@campnetanya.com.ph</p>
+                    <p><i class="fa-solid fa-globe"></i>https://campnetanya.com.ph</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-11.webp" alt="Dive Solana Resort">
+                <h3>Dive Solana Resort</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Sitio Aguada, Brgy. San Teodoro, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0908 876 5262</p>
+                    <p><i class="fa-solid fa-envelope"></i>stay@divesolana.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://divesolana.com</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-12.jpg" alt="Eagle Point Beach and Dive Resort">
+                <h3>Eagle Point Beach and Dive Resort</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Brgy. Bagalangit, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0917 846 3958</p>
+                    <p><i class="fa-solid fa-envelope"></i>communications@eaglepointresort.com.ph</p>
+                    <p><i class="fa-solid fa-globe"></i>https://eaglepointresort.com.ph</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-13.jpg" alt="La Chevrerie Resort and Spa">
+                <h3>La Chevrerie Resort and Spa</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Brgy. Ligaya, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0917 703 3320</p>
+                    <p><i class="fa-solid fa-envelope"></i>info@lachevrerie-resorts.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://eaglepointresort.com.ph</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-14.jpg" alt="Pier Uno Dive Resort">
+                <h3>Pier Uno Dive Resort</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Brgy. Solo, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0917 808 1877</p>
+                    <p><i class="fa-solid fa-envelope"></i>infopieruno@pierunodiveresort.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://pierunodiveresort.com</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-15.jpg" alt="Porto Novo Anilao Dive and Leisure Resort">
+                <h3>Porto Novo Anilao Dive and Leisure Resort</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Sitio Guinhawa, Brgy. Solo, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0908 860 1970</p>
+                    <p><i class="fa-solid fa-envelope"></i>inquiry@portonovoanilao.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://portonovoanilaoresort.com</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-16.jpg" alt="Raya Del Sol Dive Resort">
+                <h3>Raya Del Sol Dive Resort</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Brgy. Ligaya, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0908 889 0724</p>
+                    <p><i class="fa-solid fa-envelope"></i></p>
+                    <p><i class="fa-solid fa-globe"></i>https://rayadelsol.com</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-17.jpg" alt="Sea Spring Resort">
+                <h3>Sea Spring Resort</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Brgy. Mainit, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0917 153 5306</p>
+                    <p><i class="fa-solid fa-envelope"></i>ssrbatangas@gmail.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://seaspringresort.com</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-18.webp" alt="The Philip Ann Resort">
+                <h3>The Philip Ann Resort</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Brgy. Solo, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>0915 933 5633</p>
+                    <p><i class="fa-solid fa-envelope"></i>philipannresort@gmail.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://thephilipannresort.com</p>
+                </div>
+            </div>
+            <div class="card resort-card">
+                <img src="static/images/picture-19.jpg" alt="Vivere Azure">
+                <h3>Vivere Azure</h3>
+                <div class="card-details">
+                    <p><i class="fa-solid fa-location-dot"></i>Sitio Aguada, Brgy. San Teodoro, Mabini, Batangas</p>
+                    <p><i class="fa-solid fa-phone"></i>(02) 8771 7777</p>
+                    <p><i class="fa-solid fa-envelope"></i>hello@vivereazure.com</p>
+                    <p><i class="fa-solid fa-globe"></i>https://vivereazure.com</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <img src="static/images/picture-3.jpeg" alt="Mt. Gulugod Baboy">
-            <h3>Mt. Gulugod Baboy</h3>
-            <p>Mt. Gulugod Baboy in Mabini, Batangas is a beginner-friendly hiking destination known for its rolling hills and breathtaking 360-degree views. From the summit, visitors can see Batangas Bay, Balayan Bay, and even nearby islands on a clear day. It is a popular spot for day hikes, camping, and catching the sunrise or sunset above the sea.</p>
-        </div>
+
+        <h2 style="margin-top: 2rem;">Activities</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="static/images/picture-20.jpg" alt="Hiking">
+                <h3>Hiking</h3>
+                <p>Hiking is a nature activity that combines exercise, relaxation, and scenic views. A great example is <b>Mt. Gulugod Baboy</b> in Mabini, Batangas, a beginner-friendly 
+                    trail with rolling hills and 360-degree views of Batangas Bay, Balayan Bay, and nearby islands—perfect for day hikes, camping, and watching the sunrise or sunset.</p>
+            </div>
+            <div class="card">
+                <img src="static/images/picture-21.jpg" alt="Island Hopping">
+                <h3>Island Hopping</h3>
+                <p>Island Hopping is a fun activity where visitors explore multiple islands in one trip, enjoying beaches, snorkeling, and sightseeing. In Mabini, Batangas, popular stops 
+                    include <b>Sepoc Beach</b> and <b>Sombrero Island</b>, both known for their clear waters, white sand, and perfect spots for swimming and relaxation.</p>
+            </div>
+            <div class="card">
+                <img src="static/images/picture-22.webp" alt="Scuba Diving and Snorkeling">
+                <h3>Scuba Diving and Snorkeling</h3>
+                <p>Scuba Diving and Snorkeling allow visitors to discover the vibrant underwater world of corals and marine life. In Mabini, Batangas, popular sites include <b>Cathedral Rock</b>, 
+                    <b>Mainit Point</b>, and <b>Twin Rocks</b>, all known for their clear waters, colorful reefs, and diverse sea creatures that attract both beginners and experienced divers.</p>
+            </div>
         </div>
     </section>
 
@@ -80,7 +240,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" id="footer">
             <div class="footer-box">
                 <h4><i class="fa-solid fa-location-dot"></i> Find us</h4>
                 <p>Anilao Proper, Mabini, Batangas</p>
