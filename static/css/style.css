@@ -7,7 +7,7 @@ body {
     font-family: "Poppins", sans-serif; 
     line-height: 1.6; 
     background: #f8fafc; 
-    color: #333; 
+    color: #333;
 }
 html {
     scroll-behavior: smooth;
@@ -110,18 +110,71 @@ section {
     background: url(../images/background.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    padding: 6rem 2rem;
+    padding: 13rem 2rem;
+    background-attachment: fixed;
+    transition: background-attachment 0.3s ease;
+}
+#home.parallax-active {
+    background-attachment: fixed;
 }
 #home h1 { 
-    font-size: 2.5rem; 
-    margin-bottom: 1rem; 
-    color: #fff; 
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #1e90ff 0%, #ffffff 50%, #ff6f61 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #home p { 
     font-size: 1.1rem; 
     max-width: 700px; 
     margin: auto; 
     color: #f1f5f9; 
+}
+
+/* Home Buttons */
+.home-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 1rem;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(14, 165, 233, 0.4);
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+}
+.btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive HomeBtn */
+@media (max-width: 600px) {
+    .home-buttons {
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+    .btn {
+        flex: 1;
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
 }
 
 /* Carousel */
@@ -152,6 +205,7 @@ section {
     padding: .5rem 1rem;
     cursor: pointer;
     border-radius: 50%;
+    z-index: 2;
 }
 .prev { left: 10px; }
 .next { right: 10px; }
@@ -159,7 +213,8 @@ section {
 /* Cards */
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -174,6 +229,89 @@ section {
 .card img { width: 100%; height: 180px; object-fit: cover; }
 .card h3 { margin: 0; font-size:1.2rem; color:#0f172a; }
 .card p { margin:0; padding: 0.1rem; font-size: 0.95rem; color: #475569; }
+
+/* Responsive Cards */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Resort Cards */
+.resort-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.resort-card {
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.3s, max-height 0.4s, padding 0.3s;
+    max-height: 220px; 
+    overflow: hidden;
+    padding-bottom: 0;
+}
+.resort-card.expanded {
+    max-height: 600px;
+    box-shadow: 0 8px 24px rgba(56,189,248,0.15);
+    padding-bottom: 1rem;
+    background: #f1f5f9;
+    z-index: 2;
+}
+.resort-card .card-details {
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    text-align: left;
+}
+.resort-card.expanded .card-details {
+    opacity: 1;
+    pointer-events: auto;
+}
+.resort-card .card-details p {
+    display: flex;
+    align-items: center;
+    margin: 0.2em 0;
+}
+.resort-card .card-details i {
+    color: #007bff;     
+    font-size: 1em;    
+    margin-right: 8px;   
+    vertical-align: middle;
+}
+
+/* Responsive Resort Card */
+@media (max-width: 1200px) {
+    .resort-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 900px) {
+    .resort-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .resort-cards {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .resort-card {
+        max-height: 180px;
+    }
+    .resort-card.expanded {
+        max-height: 800px;
+    
+    }
+}
 
 /* Map */
 .map-container {
